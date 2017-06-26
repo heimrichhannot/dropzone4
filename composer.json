@@ -3,7 +3,7 @@
     "description": "shim components repo for dropzone4.",
     "keywords": [
     ],
-    "type": "module",
+    "type": "contao-component",
     "homepage": "https://github.com/heimrichhannot/dropzone4",
     "license": "LGPL-3.0+",
     "authors": [
