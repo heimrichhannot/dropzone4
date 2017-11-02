@@ -673,7 +673,13 @@
                   _this.hiddenFileInput.click();
                 }
                 return true;
-              }
+              },
+	      "touchstart": function(evt) {
+                evt.stopPropagation();
+                if ((clickableElement !== _this.element) || (evt.target === _this.element || Dropzone.elementInside(evt.target, _this.element.querySelector(".dz-message")))) {
+                    return _this.hiddenFileInput.click();
+                }
+              } 
             }
           });
         };
